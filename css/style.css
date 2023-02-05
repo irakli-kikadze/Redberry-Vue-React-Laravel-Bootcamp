@@ -1,0 +1,39 @@
+body {
+  background: url(../icons-images/background.png);
+}
+.redberry-logo {
+  position: absolute;
+  left: 70px;
+  top: 25px;
+}
+.agency-logo {
+  position: absolute;
+  left: 1076px;
+  top: 473px;
+}
+.line {
+  position: absolute;
+  height: 0px;
+  left: 70px;
+  right: 70px;
+  top: 89px;
+  background-color: #1a1a1a;
+}
+.btn {
+  justify-content: space-between;
+  padding: 18px 60px;
+  color: white;
+  position: absolute;
+  width: 464px;
+  height: 60px;
+  left: calc(50% - 464px / 2);
+  top: 513px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
