@@ -4,9 +4,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>რეზიუმე</title>
+    <link rel="stylesheet" href="../css/personal.css" />
   </head>
   <body>
-    <div>Hello</div>
+    <section class="first">
+      <div>
+        <h2>პირადი ინფო</h2>
+        <p class="page-num">1/3</p>
+        <hr class="line" />
+      </div>
+      <button onclick="location.href='index.html'" class="backVector">
+        <img src="../icons-images/Vector.svg" alt="vector left" />
+      </button>
+      <form action="submit">
+        <div class="input-name">
+          <div class="name">
+            <p style="font-weight: 500">სახელი</p>
+            <input placeholder="სახელი" class="inputname" type="text" />
+            <img
+              class="correct-icon"
+              src="/icons-images/correct.svg"
+              alt="correct icon"
+            />
+            <img src="/icons-images/error.svg" class="error-icon" />
+            <p class="hintname">მინიმუმ 2 ასო, ქართული ასოები</p>
+          </div>
+          <div class="surname">
+            <p style="font-weight: 500">გვარი</p>
+            <input
+              style="padding-left: 16px"
+              placeholder="გვარი"
+              class="inputname"
+              type="text"
+            />
+            <img
+              class="correct-icon"
+              src="/icons-images/correct.svg"
+              alt="correct icon"
+            />
+            <img src="/icons-images/error.svg" class="error-icon" />
+            <p class="hintname">მინიმუმ 2 ასო, ქართული ასოები</p>
+          </div>
+        </div>
+        <div class="personal-photo">
+          <h3>პირადი ფოტოს ატვირთვა</h3>
+          <div class="upload">
+            ატვირთვა <input class="fileInput" type="file" required />
+          </div>
+        </div>
+        <div class="about-me">
+          <p class="about-text">ჩემ შესახებ (არასავალდებულო)</p>
+          <input
+            style="padding-bottom: 69px; padding-left: 16px"
+            placeholder="ზოგადი ინფო შენ შესახებ"
+            class="about-input"
+            type="text"
+          />
+        </div>
+        <div class="email">
+          <p class="email-text">ელ.ფოსტა</p>
+          <input
+            style="padding-left: 16px"
+            placeholder="name@redberry.ge"
+            class="email-input"
+            type="text"
+          />
+          <img
+            class="correct-icon"
+            src="/icons-images/correct.svg"
+            alt="correct icon"
+          />
+          <img src="/icons-images/error.svg" class="error-icon" />
+          <p class="email-hint">უნდა მთავრდებოდეს @redberry.ge-ით</p>
+        </div>
+        <div class="mobile">
+          <p class="mobile-text">მობილურის ნომერი</p>
+          <input class="mobile-input" type="number" />
+          <img
+            class="correct-icon"
+            src="/icons-images/correct.svg"
+            alt="correct icon"
+          />
+          <img src="/icons-images/error.svg" class="error-icon" />
+          <p class="mobile-hint">
+            უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს
+          </p>
+        </div>
+        <button class="next" type="submit">
+          <p class="next-text">შემდეგი</p>
+        </button>
+      </form>
+    </section>
+    <section class="second">
+      <img
+        class="plus-icon"
+        src="/icons-images/LOGO-12 1.svg"
+        alt="logo icon"
+      />
+      <div>
+        <p class="f-name">ანზორ</p>
+        <p class="f-surname">მუმლაძე</p>
+        <div>
+          <img
+            class="email-icon"
+            src="/icons-images/email.svg"
+            alt="email icon"
+          />
+          <p class="f-email">name666@gmail.com</p>
+        </div>
+        <div>
+          <img
+            class="f-mobile"
+            src="/icons-images/mobile.svg"
+            alt="mobile icon"
+          />
+          <p class="f-mobile-num">+995 597 63 45 16</p>
+        </div>
+        <p class="about-me">ჩემ შესახებ</p>
+        <p class="about-me-full">
+          ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები გამამხნევებელი
+          ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
+        </p>
+        <img
+          class="uploaded-image"
+          src="/icons-images/random.img.png
+        "
+          alt="uploaded image"
+        />
+      </div>
+    </section>
   </body>
 </html>
