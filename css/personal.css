@@ -107,6 +107,20 @@ h2 {
   position: relative;
   padding-left: 16px;
 }
+.inputsurname {
+  box-sizing: border-box;
+  width: 371px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  position: relative;
+  padding-left: 16px;
+}
 .inputname::placeholder {
   position: absolute;
   height: 21px;
@@ -121,6 +135,28 @@ h2 {
   display: flex;
   align-items: center;
   color: rgba(0, 0, 0, 0.6);
+}
+.inputname:hover {
+  outline: none;
+}
+
+.inputsurname::placeholder {
+  position: absolute;
+  height: 21px;
+  left: 16px;
+  right: 16px;
+  top: 13px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+.inputsurname:hover {
+  outline: none;
 }
 .hintname {
   width: 371px;
@@ -221,6 +257,9 @@ h3 {
   align-self: stretch;
   flex-grow: 1;
 }
+.about-input:hover {
+  outline: none;
+}
 .about-input::placeholder {
   position: absolute;
   height: 21px;
@@ -273,6 +312,9 @@ h3 {
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+}
+.email-input:hover {
+  outline: none;
 }
 .email-hint {
   width: 798px;
@@ -344,6 +386,9 @@ h3 {
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+}
+.mobile-input:hover {
+  outline: none;
 }
 .mobile-hint {
   width: 798px;
@@ -439,7 +484,7 @@ h3 {
 }
 .f-surname {
   width: 145px;
-  left: 223px;
+  left: 248px;
   position: absolute;
   height: 42px;
   top: 68px;
@@ -521,7 +566,7 @@ h3 {
   height: 246px;
   left: 501px;
   top: 48px;
-
+  object-fit: cover;
   background: url(.jpg), #d9d9d9;
   border-radius: 133px;
 }
