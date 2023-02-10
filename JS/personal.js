@@ -18,6 +18,7 @@ const mobileInput = document.querySelector(".mobile-input");
 const fMobileInput = document.querySelector(".f-mobile-num");
 const mobileText = document.querySelector(".mobile-text");
 const form = document.querySelector(".form");
+const backVector = document.querySelector(".backVector");
 
 //functions
 function addError(index, inputEl, inputHeader) {
@@ -100,11 +101,9 @@ function checkMobile() {
 
 function submitForm(e) {
   e.preventDefault();
-  let valid = false;
+  let valid = true;
   [...corrects].forEach((correct, index) => {
-    if (correct.classList.contains("active")) {
-      valid = true;
-    } else {
+    if (!correct.classList.contains("active")) {
       errors[index].classList.add("active");
       valid = false;
     }
@@ -122,7 +121,9 @@ photoInput.addEventListener("change", readURL);
 aboutInput.addEventListener("blur", saveInfo);
 mobileInput.addEventListener("blur", checkMobile);
 form.addEventListener("submit", submitForm);
-
+backVector.addEventListener("click", () => {
+  localStorage.clear();
+});
 // set inputs values and upload photo
 nameInput.value = localStorage.getItem("name");
 surnameInput.value = localStorage.getItem("surname");

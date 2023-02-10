@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education</title>
+    <link rel="stylesheet" href="../css/education.css" />
+    <link rel="stylesheet" href="../css/personal.css" />
+  </head>
+  <body>
+    <section class="first">
+      <div>
+        <h2>განათლება</h2>
+        <p class="page-num">3/3</p>
+        <hr class="line" />
+      </div>
+      <button onclick="location.href='index.html'" class="backVector">
+        <img src="../icons-images/Vector.svg" alt="vector left" />
+      </button>
+      <div class="education">
+        <p class="education-text">განათლება</p>
+        <input
+          style="padding-left: 16px"
+          placeholder="სასწავლებელი"
+          class="education-input"
+          type="text"
+        /><img
+          class="correct-icon"
+          src="/icons-images/correct.svg"
+          alt="correct icon"
+        />
+        <img src="/icons-images/error.svg" class="error-icon" />
+
+        <p class="education-hint">მინიმუმ 2 სიმბოლო</p>
+      </div>
+      <div class="degree">
+        <p class="degree-text">ხარისხი</p>
+        <img class="vector-down" src="../icons-images/VectorDown.svg" alt="" />
+        <input
+          type="text"
+          placeholder="აირჩიეთ ხარისხი"
+          list="options"
+          class="degree-input"
+          size="9"
+        />
+        <datalist class="degree-options" id="options">
+          <option value="საშუალო სკოლის დიპლომი"></option>
+          <option value="ზოგადსაგანმანათლებლო დიპლომი"></option>
+          <option value="ბაკალავრი"></option>
+          <option value="მაგისტრი"></option>
+          <option value="დოქტორი"></option>
+          <option value="ასოცირებული ხარისხი"></option>
+          <option value="სტუდენტი"></option>
+          <option value="კოლეჯი (ხარისხის გარეშე)"></option>
+          <option value="სხვა"></option>
+        </datalist>
+      </div>
+      <div class="ed-end-date">
+        <p class="ed-end-date-text">დამთავრების რიცხვი</p>
+        <input class="ed-end-date-input" type="date" required />
+      </div>
+    </section>
+    <section class="second"></section>
+  </body>
+</html>

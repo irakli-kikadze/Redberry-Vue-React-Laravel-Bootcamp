@@ -13,7 +13,7 @@
   width: 846px;
   height: 125px;
   left: calc(50% - 846px / 2 - 411px);
-  top: 157px;
+  top: 67px;
 }
 .position-text {
   width: 798px;
@@ -74,6 +74,9 @@
   align-items: center;
   color: rgba(0, 0, 0, 0.6);
 }
+.position-input:hover {
+  outline: none;
+}
 .employer {
   display: flex;
   flex-direction: column;
@@ -84,7 +87,7 @@
   width: 846px;
   height: 125px;
   left: calc(50% - 846px / 2 - 411px);
-  top: 294px;
+  top: 204px;
 }
 .employer-text {
   width: 798px;
@@ -145,6 +148,9 @@
   align-items: center;
   color: rgba(0, 0, 0, 0.6);
 }
+.employer-input:hover {
+  outline: none;
+}
 .start-date {
   display: flex;
   flex-direction: column;
@@ -155,7 +161,7 @@
   width: 419px;
   height: 125px;
   left: calc(50% - 419px / 2 - 624.5px);
-  top: 431px;
+  top: 341px;
 }
 .start-date-text {
   width: 371px;
@@ -187,6 +193,9 @@
   padding-left: 16px;
   padding-right: 16px;
 }
+.start-date-input:hover {
+  outline: none;
+}
 .end-date {
   display: flex;
   flex-direction: column;
@@ -197,7 +206,10 @@
   width: 419px;
   height: 93px;
   left: calc(50% - 419px / 2 - 197.5px);
-  top: 431px;
+  top: 341px;
+}
+.end-date-input:hover {
+  outline: none;
 }
 .end-date-text {
   width: 371px;
@@ -239,8 +251,9 @@
   width: 846px;
   height: 168px;
   left: calc(50% - 846px / 2 - 411px);
-  top: 541px;
+  top: 451px;
 }
+
 .about-experience-text {
   width: 798px;
   height: 21px;
@@ -282,12 +295,15 @@
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6);
 }
+.about-experience-input:hover {
+  outline: none;
+}
 .experience-line {
   position: absolute;
   width: 798px;
   height: 0px;
   left: 150px;
-  top: 760px;
+  top: 670px;
   border: 1px solid #c1c1c1;
 }
 .add-experience {
@@ -354,8 +370,8 @@
   position: absolute;
   width: 662px;
   height: 0px;
-  right: 80px;
-  top: 341px;
+  right: -130px;
+  top: 200px;
   border: 1px solid #c8c8c8;
 }
 .f-experience {
@@ -363,7 +379,7 @@
   width: 143px;
   height: 22px;
   left: 80px;
-  top: 365px;
+  top: 0px;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
@@ -376,7 +392,7 @@
 
   height: 20px;
   left: 80px;
-  top: 402px;
+  top: 40px;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
@@ -389,7 +405,7 @@
   position: absolute;
   height: 20px;
   left: 165px;
-  top: 402px;
+  top: 40px;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 500;
@@ -403,7 +419,7 @@
   width: 183px;
   height: 19px;
   left: 80px;
-  top: 429px;
+  top: 70px;
   font-family: "Helvetica Neue";
   font-style: italic;
   font-weight: 400;
@@ -416,7 +432,7 @@
   width: 662px;
   height: 66px;
   left: 80px;
-  top: 464px;
+  top: 100px;
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
@@ -424,4 +440,27 @@
   line-height: 22px;
   text-transform: capitalize;
   color: #000000;
+}
+.section-experience {
+  position: relative;
+  overflow: scroll;
+  height: 685px;
+  top: 90px;
+}
+.form {
+  width: 1920px;
+  height: 600px;
+  position: relative;
+}
+.experience-section {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 370px;
+  overflow: scroll;
+}
+.experience-div {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
 }
