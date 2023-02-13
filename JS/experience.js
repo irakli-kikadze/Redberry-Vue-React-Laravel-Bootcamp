@@ -294,7 +294,7 @@ addExperience.addEventListener("click", () => {
 </p>
 </div>`;
 
-  form.insertAdjacentHTML("afterend", html);
+  form.insertAdjacentHTML("beforeend", html);
 
   experienceSection.insertAdjacentHTML("beforeend", newExp);
 

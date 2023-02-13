@@ -189,7 +189,27 @@ function sendForm() {
     educations[index].description = about;
   });
 
-  educations[0].degree_id = 3;
+  if (selectBtnText.textContent == "საშუალო სკოლის დიპლომი") {
+    educations[0].degree_id = 1;
+  } else if (selectBtnText.textContent == "ზოგადსაგანმანათლებლო დიპლომი") {
+    educations[0].degree_id = 2;
+  } else if (selectBtnText.textContent == "ბაკალავრი") {
+    educations[0].degree_id = 3;
+  } else if (selectBtnText.textContent == "მაგისტრი") {
+    educations[0].degree_id = 4;
+  } else if (selectBtnText.textContent == "დოქტორი") {
+    educations[0].degree_id = 5;
+  } else if (selectBtnText.textContent == "ასოცირებული ხარისხი") {
+    educations[0].degree_id = 6;
+  } else if (selectBtnText.textContent == "სტუდენტი") {
+    educations[0].degree_id = 7;
+  } else if (selectBtnText.textContent == "კოლეჯი(ხარისიხს გარეშე)") {
+    educations[0].degree_id = 8;
+  } else if (selectBtnText.textContent == "სხვა") {
+    educations[0].degree_id = 9;
+  } else {
+    educations[0].degree_id = 1;
+  }
 
   localStorage.getItem("aboutEducation")
     ? null
