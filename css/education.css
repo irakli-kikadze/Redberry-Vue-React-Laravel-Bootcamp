@@ -72,7 +72,7 @@
   width: 419px;
   height: 125px;
   left: calc(50% - 419px / 2 - 624.5px);
-  top: 294px;
+  top: 285px;
   position: relative;
 }
 .vector-down {
@@ -95,6 +95,22 @@
 }
 .degree-input:hover {
   outline: none;
+}
+.degree-text {
+  width: 371px;
+  height: 21px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 .degree-options {
   display: flex;
@@ -148,6 +164,199 @@
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  padding: 8px 24px;
+}
+.ed-end-date-input:hover {
+  outline: none;
+}
+.options,
+.selectBtn {
+  font-weight: 400;
+  font-size: 20px;
+  width: 200px;
+  background: #ffffff;
+  border: 1px solid rgba(185, 180, 196, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 10px 0;
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+}
+.selectBtn {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  width: 392px;
+  height: 48px;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.option {
+  padding: 12px 20px;
+  margin: 10px 0;
+}
+.options {
+  width: 392px;
+  height: 570px;
+  display: none;
+  list-style: none;
+}
+.arrowDown {
+  height: 8px;
+  width: 14px;
+}
+.option:hover,
+.secondOption:hover {
+  background-color: #f7f7f9;
+  font-weight: 600;
+}
+.active {
+  display: block;
+}
+
+.ed-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 8px;
+  position: absolute;
+  width: 846px;
+  height: 224px;
+  left: calc(50% - 846px / 2 - 411px);
+  top: 405px;
+}
+.ed-about-text {
+  width: 798px;
+  height: 21px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.ed-about-input {
+  box-sizing: border-box;
+  width: 798px;
+  height: 179px;
+  background: #ffffff;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 130px;
+}
+.ed-about-input:hover {
+  outline: none;
+}
+
+.f-education-header {
+  position: absolute;
+  width: 115px;
+  height: 22px;
+  left: 80px;
+  top: 588px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f93b1d;
+}
+.f-education-uni {
+  position: absolute;
+  width: 349px;
+  height: 20px;
+  left: 80px;
+  top: 625px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+.f-education-degree {
+  position: absolute;
+  width: 81px;
+  height: 20px;
+  left: 445px;
+  top: 625px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+.f-education-date {
+  position: absolute;
+  width: 84px;
+  height: 19px;
+  left: 80px;
+  top: 652px;
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+}
+.f-education-about {
+  position: absolute;
+  width: 662px;
+  height: 88px;
+  left: 80px;
+  top: 687px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: lowercase;
+  color: #000000;
+}
+.ending-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  width: 151px;
+  height: 48px;
+  right: 972px;
+  bottom: 65px;
+  background: #6b40e3;
+  border-radius: 4px;
+  padding-left: 8px;
+}
+.ending-btn-text {
+  width: 112px;
+  height: 20px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-left: 20px;
 }

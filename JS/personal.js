@@ -82,6 +82,8 @@ function readURL(e) {
     uploadedPhoto.setAttribute("src", reader.result);
   });
 }
+
+localStorage.getItem("aboutMe") ? null : localStorage.setItem("aboutMe", "");
 function saveInfo(e) {
   let value = e.target.value;
   localStorage.setItem("aboutMe", value);

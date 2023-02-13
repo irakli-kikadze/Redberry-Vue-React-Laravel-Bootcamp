@@ -7,6 +7,7 @@
     <title>Education</title>
     <link rel="stylesheet" href="../css/education.css" />
     <link rel="stylesheet" href="../css/personal.css" />
+    <link rel="stylesheet" href="../css/experience.css" />
   </head>
   <body>
     <section class="first">
@@ -36,31 +37,99 @@
       </div>
       <div class="degree">
         <p class="degree-text">ხარისხი</p>
-        <img class="vector-down" src="../icons-images/VectorDown.svg" alt="" />
-        <input
-          type="text"
-          placeholder="აირჩიეთ ხარისხი"
-          list="options"
-          class="degree-input"
-          size="9"
-        />
-        <datalist class="degree-options" id="options">
-          <option value="საშუალო სკოლის დიპლომი"></option>
-          <option value="ზოგადსაგანმანათლებლო დიპლომი"></option>
-          <option value="ბაკალავრი"></option>
-          <option value="მაგისტრი"></option>
-          <option value="დოქტორი"></option>
-          <option value="ასოცირებული ხარისხი"></option>
-          <option value="სტუდენტი"></option>
-          <option value="კოლეჯი (ხარისხის გარეშე)"></option>
-          <option value="სხვა"></option>
-        </datalist>
+
+        <div class="selectMenu" id="level">
+          <div class="selectBtn flex">
+            <span class="selectBtnText"><span class="red">*</span></span>
+            <img
+              class="arrowDown rotate"
+              src="../icons-images/VectorDown.svg"
+              alt="arrow"
+            />
+          </div>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+          </ul>
+        </div>
       </div>
       <div class="ed-end-date">
         <p class="ed-end-date-text">დამთავრების რიცხვი</p>
         <input class="ed-end-date-input" type="date" required />
       </div>
+      <div class="ed-about">
+        <p class="ed-about-text">აღწერა</p>
+        <input class="ed-about-input" type="text" />
+      </div>
+      <button class="btn-back" onclick="location.href='experience.html'">
+        <p class="btn-back-text">უკან</p>
+      </button>
+      <button class="ending-btn">
+        <p class="ending-btn-text">დასრულება</p>
+      </button>
     </section>
-    <section class="second"></section>
+    <section class="second">
+      <img
+        class="plus-icon"
+        src="/icons-images/LOGO-12 1.svg"
+        alt="logo icon"
+      />
+      <div>
+        <p class="f-name">ანზორ</p>
+        <p class="f-surname">მუმლაძე</p>
+        <div>
+          <img
+            class="email-icon"
+            src="/icons-images/email.svg"
+            alt="email icon"
+          />
+          <p class="f-email">name666@gmail.com</p>
+        </div>
+        <div>
+          <img
+            class="f-mobile"
+            src="/icons-images/mobile.svg"
+            alt="mobile icon"
+          />
+          <p class="f-mobile-num">+995 597 63 45 16</p>
+        </div>
+        <p class="about-me-2">ჩემ შესახებ</p>
+        <p class="about-me-full">
+          ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ ავდგები გამამხნევებელი
+          ვარჯიშების მაგიერ დიზაინს ვაკეთებ.
+        </p>
+        <img
+          class="uploaded-image"
+          src="/icons-images/default.png
+          "
+          alt="uploaded image"
+        />
+      </div>
+      <section class="experience-section">
+        <div class="experience-div">
+          <hr class="line-experience-second" />
+          <p class="f-experience">გამოცდილება</p>
+          <p class="f-position"></p>
+          <p class="f-employer"></p>
+          <p class="f-date"></p>
+          <p class="f-about-experience-text"></p>
+        </div>
+      </section>
+      <div class="f-education">
+        <p class="f-education-header">განათლება</p>
+        <p class="f-education-uni">TSU</p>
+        <p class="f-education-degree">student</p>
+        <p class="f-education-date">09.02.23</p>
+        <p class="f-education-about">fsdfsdf sdf sdfsd sdfs dfds fsdf</p>
+      </div>
+    </section>
+    <script src="../JS/education.js"></script>
   </body>
 </html>

@@ -129,6 +129,10 @@ function reload() {
       }
     });
   });
+  localStorage.getItem("abouts")
+    ? null
+    : localStorage.setItem("abouts", JSON.stringify([""]));
+
   aboutExperiences.forEach((input, index) => {
     input.addEventListener("blur", () => {
       if (input.value !== "") {
